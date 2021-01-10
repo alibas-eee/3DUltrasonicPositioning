@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Object Distance Visualiser</title>
+	<style>
+        body {
+            overflow: hidden;
+            margin: 0px;
+        }
+        div.chart0 {
+            position: absolute;
+            top: 100px;
+            width: 500px;
+            height: 250px;
+            border: 1px solid #62b4eb;
+            z-index: 1;
+        }
+        div.chart1 {
+            position: absolute;
+            top: 400px;
+            width: 500px;
+            height: 250px;
+            border: 1px solid #62b4eb;
+            z-index: 1;
+        }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+</head>
+
+<body>
+    <div class="chart0">
+        <canvas id="Chart0"></canvas>
+    </div>
+
+    <div class="chart1">
+        <canvas id="Chart1"></canvas>
+    </div>
+
+    <div id ="threeDiv">    </div>
+    
+    <script type="module" src="client.js"></script>
+   
+</body>
+
+</html>
